@@ -1,5 +1,5 @@
 #
-# port forward alias in Beacon and SSH 
+# Port forward alias in beacon and SSH sessions
 # Developed by @rsmudge; no changes made from original
 
 # pull common code into a function
